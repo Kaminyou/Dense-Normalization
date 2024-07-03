@@ -14,8 +14,6 @@ services:
             - capabilities: [gpu]
     volumes:
       - ${PWD}:${PWD}
-    ports:
-      - 19000:8888
     working_dir: ${PWD}
     stdin_open: true
     tty: true
