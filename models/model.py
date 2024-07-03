@@ -8,21 +8,18 @@ def get_model(
     normalization="in",
     isTrain=True,
     parallelism=False,
-    interpolate_mode='bilinear',
 ):
     if model_name == "CUT":
         model = ContrastiveModel(
             config,
             normalization=normalization,
             parallelism=parallelism,
-            interpolate_mode=interpolate_mode,
         )
     elif model_name == "cycleGAN":
         model = CycleGanModel(
             config,
             normalization=normalization,
             parallelism=parallelism,
-            interpolate_mode=interpolate_mode,
         )
     elif model_name == "LSeSim":
         print("Please use the scripts prepared in the F-LSeSim folder")

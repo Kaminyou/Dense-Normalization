@@ -183,14 +183,12 @@ class XPrefetchInferenceDataset(Dataset):
         return_anchor=False,
         thumbnail=None,
         pad: int = 16,
-        interpolate_mode='bilinear',
     ):
         self.root_X = root_X
         self.transform = transform
         self.return_anchor = return_anchor
         self.thumbnail = thumbnail
         self.pad = pad
-        self.interpolate_mode = interpolate_mode
 
         def custom_sort_key(filename):
             parts = filename.split('_')

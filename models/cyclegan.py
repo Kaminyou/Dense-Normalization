@@ -17,7 +17,7 @@ from utils.util import ReplayBuffer, weights_init
 class CycleGanModel(BaseModel):
     # instance normalization can be different
     # from the one specified during training
-    def __init__(self, config, normalization="in", parallelism=False, interpolate_mode='bilinear'):
+    def __init__(self, config, normalization="in", parallelism=False):
         BaseModel.__init__(self, config)
         self.model_names = ["G_X2Y", "G_Y2X", "D_X", "D_Y"]
         self.loss_names = [
@@ -47,12 +47,10 @@ class CycleGanModel(BaseModel):
         self.G_X2Y = Generator(
             normalization=normalization,
             parallelism=parallelism,
-            interpolate_mode=interpolate_mode,
         ).to(self.device)
         self.G_Y2X = Generator(
             normalization=normalization,
             parallelism=parallelism,
-            interpolate_mode=interpolate_mode,
         ).to(self.device)
         self.D_X = Discriminator(avg_pooling=True).to(self.device)
         self.D_Y = Discriminator(avg_pooling=True).to(self.device)

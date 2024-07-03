@@ -34,7 +34,6 @@ def main():
         normalization=config["INFERENCE_SETTING"]["NORMALIZATION"],
         isTrain=False,
         parallelism=config["INFERENCE_SETTING"].get('PARALLELISM', False),
-        interpolate_mode=config["INFERENCE_SETTING"].get('INTERPOLATE_MODE', 'bilinear'),
     )
 
     if config["INFERENCE_SETTING"]["NORMALIZATION"] != 'dn':
@@ -46,7 +45,6 @@ def main():
             transform=test_transforms,
             return_anchor=True,
             pad=MARGIN_PADDING,
-            interpolate_mode=config["INFERENCE_SETTING"].get('INTERPOLATE_MODE', 'bilinear'),
         )
     else:
         test_dataset = XInferenceDataset(

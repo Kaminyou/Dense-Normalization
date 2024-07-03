@@ -13,12 +13,8 @@ class DenseInstanceNorm(nn.Module):
         out_channels: int,
         affine: bool = True,
         device: str = 'cuda',
-        interpolate_mode: str = 'bilinear',
     ):
         super(DenseInstanceNorm, self).__init__()
-
-        if interpolate_mode not in ['bilinear']:
-            raise ValueError('interpolate_mode supports bilinear only')
 
         # if use normal instance normalization during evaluation mode
         self.normal_instance_normalization = False
@@ -29,7 +25,6 @@ class DenseInstanceNorm(nn.Module):
 
         self.out_channels = out_channels
         self.device = device
-        self.interpolate_mode = interpolate_mode
 
         self.interpolation3d = Interpolation3D(channel=out_channels, device=device)
         if affine:
@@ -166,21 +161,11 @@ class PrefetchDenseInstanceNorm(nn.Module):
         out_channels: int,
         affine: bool = True,
         device: str = 'cuda',
-        interpolate_mode: str = 'bilinear',
     ):
         super(PrefetchDenseInstanceNorm, self).__init__()
 
-        # if use normal instance normalization during evaluation mode
-
-        # if collecting instance normalization mean and std
-        # during evaluation mode'
-
-        if interpolate_mode not in ['bilinear']:
-            raise ValueError('interpolate_mode supports bilinear and bicubic only')
-
         self.out_channels = out_channels
         self.device = device
-        self.interpolate_mode = interpolate_mode
 
         self.interpolation3d = Interpolation3D(channel=out_channels, device=device)
         if affine:

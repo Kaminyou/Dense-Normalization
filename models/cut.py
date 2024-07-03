@@ -15,7 +15,7 @@ from models.projector import Head
 class ContrastiveModel(BaseModel):
     # instance normalization can be different from the
     # one specified during training
-    def __init__(self, config, normalization="in", parallelism=False, interpolate_mode='bilinear'):
+    def __init__(self, config, normalization="in", parallelism=False):
         BaseModel.__init__(self, config)
         self.model_names = ["D_Y", "G", "H"]
         self.loss_names = ["G_adv", "D_Y", "G", "NCE"]
@@ -32,7 +32,6 @@ class ContrastiveModel(BaseModel):
         self.G = Generator(
             normalization=normalization,
             parallelism=parallelism,
-            interpolate_mode=interpolate_mode,
         ).to(self.device)
         self.H = Head().to(self.device)
 
