@@ -2,7 +2,6 @@ import typing as t
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as f
 
 from models.interpolation import Interpolation3D
 
