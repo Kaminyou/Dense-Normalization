@@ -33,5 +33,15 @@ $ unzip simple_example.zip
     - c. run your jupyter notebook by `nohup jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root &`
     - d. open the jupter notebook service on your port (`19000` here)
 
+## Datasets
+### `real2paint` Dataset
+For the real domain, please download the [UHDM dataset](https://xinyu-andy.github.io/uhdm-page/) from its official website. For the painting domain, we have curated a dataset of high-resolution Vincent van Gogh paintings, which can be downloaded at [link](https://www.dropbox.com/scl/fi/gohkhvipij61w496eeqdw/vincent_van_gogh.zip?rlkey=vco57kdadendwhy4zzednkk4i&st=d127g9bk&dl=0). Please note that we do not own these images; users should ensure their use does not trigger legal issues.
+
+### `Kyoto-summer2autumn` Dataset
+Please download it at [link](https://github.com/Kaminyou/Kyoto-summer2autumn).
+
+### `ANHIR` Dataset
+Please download it at [link](https://anhir.grand-challenge.org/Data/). Please note that we do not own these images; users should ensure their use does not trigger legal issues.
+
 ## Train your model
 The training of I2I model is the same as [KIN](https://github.com/Kaminyou/URUST). DN is a plugin for any I2I model with InstanceNorm layers.
