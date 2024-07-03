@@ -33,5 +33,5 @@ $ unzip simple_example.zip
     - c. run your jupyter notebook by `nohup jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root &`
     - d. open the jupter notebook service on your port (`19000` here)
 
-## Training your model
+## Train your model
 The training of I2I model is the same as [KIN](https://github.com/Kaminyou/URUST). DN is a plugin for any I2I model with InstanceNorm layers.
