@@ -57,18 +57,6 @@ def main():
                           f"{config['INFERENCE_SETTING']['NORMALIZATION']}_" \
                           f"{config['INFERENCE_SETTING']['MODEL_VERSION']}.png"
 
-    if config["INFERENCE_SETTING"]["NORMALIZATION"] == "kin":
-        path_base = os.path.join(
-            path_base,
-            f"{config['INFERENCE_SETTING']['KIN_KERNEL']}"
-            f"_{config['INFERENCE_SETTING']['KIN_PADDING']}",
-        )
-        combined_image_name = f"combined_" \
-            f"{config['INFERENCE_SETTING']['NORMALIZATION']}" \
-            f"_{config['INFERENCE_SETTING']['MODEL_VERSION']}_" \
-            f"{config['INFERENCE_SETTING']['KIN_KERNEL']}_" \
-            f"{config['INFERENCE_SETTING']['KIN_PADDING']}.png"
-
     filenames = os.listdir(path_base)
     try:
         filenames.remove('thumbnail_Y_fake.png')
