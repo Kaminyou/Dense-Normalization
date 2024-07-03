@@ -1,6 +1,5 @@
 import argparse
 import os
-import time
 from pathlib import Path
 
 import torch
@@ -92,8 +91,6 @@ def main():
             y_anchor_num=y_anchor_num + 1,
             x_anchor_num=x_anchor_num + 1,
         )
-        total_time = 0
-        cnt = 0
         for idx, data in enumerate(test_loader):
             print(f"Caching {idx}", end="\r")
             X, X_path, y_anchor, x_anchor = (
@@ -102,15 +99,12 @@ def main():
                 data["y_idx"],
                 data["x_idx"],
             )
-            now = time.time()
-            cnt += 1
             _ = model.inference_with_anchor(
                 X,
                 y_anchor=y_anchor,
                 x_anchor=x_anchor,
                 padding=1,
             )
-            total_time += time.time() - now
 
         model.use_dense_instance_norm_for_whole_model()
         for idx, data in enumerate(test_loader):
@@ -121,7 +115,6 @@ def main():
                 data["y_idx"],
                 data["x_idx"],
             )
-            now = time.time()
             Y_fake = model.inference_with_anchor(
                 X,
                 y_anchor=y_anchor,
@@ -129,7 +122,6 @@ def main():
                 padding=1,
             )
             Y_fake = Y_fake[:, :, MARGIN_PADDING:512 + MARGIN_PADDING, MARGIN_PADDING:512 + MARGIN_PADDING]  # noqa
-            total_time += time.time() - now
             if config["INFERENCE_SETTING"]["SAVE_ORIGINAL_IMAGE"]:
                 save_image(
                     reverse_image_normalize(X),
@@ -145,7 +137,6 @@ def main():
                     f"{Path(X_path[0]).stem}_Y_fake_{idx}.png",
                 ),
             )
-        print('time:', total_time, cnt)
 
     else:
         os.makedirs(save_path_base, exist_ok=True)
@@ -156,16 +147,12 @@ def main():
             y_anchor_num=y_anchor_num + 1,
             x_anchor_num=x_anchor_num + 1,
         )
-        total_time = 0
-        cnt = 0
         for idx, data in enumerate(test_loader):
             print(f"Executing {idx}", end="\r")
 
             images = [data['X_img']] + data['pre_img']
             X = torch.cat(images, dim=0)
 
-            now = time.time()
-            cnt += 1
             Y_fake = model.inference_with_anchor(
                 X,
                 y_anchor=int(data['y_idx'][0]),
@@ -174,7 +161,6 @@ def main():
                 pre_y_anchor=[int(i) for i in data['pre_y_idx']],
                 pre_x_anchor=[int(i) for i in data['pre_x_idx']],
             )
-            total_time += time.time() - now
             Y_fake = Y_fake[[0]]
             Y_fake = Y_fake[:, :, MARGIN_PADDING:512 + MARGIN_PADDING, MARGIN_PADDING:512 + MARGIN_PADDING]  # noqa
             if data['y_idx'][0] != -1:
@@ -186,7 +172,6 @@ def main():
                         f"{Path(X_path[0]).stem}_Y_fake_{idx}.png",
                     ),
                 )
-        print('time:', total_time, cnt)
 
 
 if __name__ == "__main__":
