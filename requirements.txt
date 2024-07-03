@@ -1,0 +1,4 @@
+opencv-python==4.9.0.80
+pyyaml==6.0.1
+albumentations==1.4.0
+matplotlib==3.8.3

@@ -1,0 +1,22 @@
+version: '3'
+services:
+  dn-env:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dn-env
+    privileged: true
+    shm_size: 512g
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    volumes:
+      - ${PWD}:${PWD}
+    ports:
+      - 19000:8888
+    working_dir: ${PWD}
+    stdin_open: true
+    tty: true
+
