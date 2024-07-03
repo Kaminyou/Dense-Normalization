@@ -1,3 +1,6 @@
+[![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
+![version](https://img.shields.io/badge/version-0.1.0-red)
+[![License: AGPL](https://img.shields.io/badge/License-AGPL-yellow.svg)](https://github.com/Kaminyou/Dense-Normalization/blob/main/LICENSE)
 # [ECCV 2024] Dense-Normalization
 Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization
 
