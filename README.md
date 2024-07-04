@@ -12,7 +12,7 @@ Authors: [Ming-Yang Ho](https://kaminyou.com/), [Che-Ming Wu](https://github.com
 
 
 ## Get Started with an example
-We provide a simple example (one image from the Kyoto summer2autumn dataset) for you to translate an UHR image with our DN
+We provide a simple example (one image from the Kyoto summer2autumn dataset) for you to translate an UHR image with our DN.
 
 ### Download example data
 ```bash
