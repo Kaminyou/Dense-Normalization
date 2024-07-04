@@ -3,7 +3,13 @@
 [![License: AGPL](https://img.shields.io/badge/License-AGPL-yellow.svg)](https://github.com/Kaminyou/Dense-Normalization/blob/main/LICENSE)
 ![linting workflow](https://github.com/Kaminyou/Dense-Normalization/actions/workflows/main.yml/badge.svg)
 # [ECCV 2024] Dense-Normalization
-Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization
+Official implementation of **Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization**
+
+Authors: [Ming-Yang Ho](https://kaminyou.com/), [Che-Ming Wu](https://github.com/st9007a), [Min-Sheng Wu](https://github.com/Min-Sheng), and Yufeng Jane Tseng
+
+![img](./images/teaser.jpg)
+![img](./images/framework.jpg)
+
 
 ## Get Started with an example
 We provide a simple example (one image from the Kyoto summer2autumn dataset) for you to translate an UHR image with our DN
