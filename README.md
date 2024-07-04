@@ -1,5 +1,5 @@
 [![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
-![version](https://img.shields.io/badge/version-0.1.0-red)
+![version](https://img.shields.io/badge/version-1.0.0-red)
 [![License: AGPL](https://img.shields.io/badge/License-AGPL-yellow.svg)](https://github.com/Kaminyou/Dense-Normalization/blob/main/LICENSE)
 ![linting workflow](https://github.com/Kaminyou/Dense-Normalization/actions/workflows/main.yml/badge.svg)
 # [ECCV 2024] Dense-Normalization
