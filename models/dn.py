@@ -1,4 +1,4 @@
-# Copyright (c) 2024 Ming-Yang Ho
+# Copyright (c) 2024 Ming-Yang Ho, Che-Ming Wu
 # All rights reserved.
 #
 # This source code is licensed under the AGPL License found in the
