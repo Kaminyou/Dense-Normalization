@@ -5,6 +5,7 @@
 # [ECCV 2024] Dense-Normalization
 Official implementation of **Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization**
 
+Paper link: [arXiv](https://arxiv.org/abs/2407.04245)
 Authors: [Ming-Yang Ho](https://kaminyou.com/), [Che-Ming Wu](https://github.com/st9007a), [Min-Sheng Wu](https://github.com/Min-Sheng), and Yufeng Jane Tseng
 
 ![img](./images/teaser.jpg)
@@ -55,3 +56,16 @@ Please download it at [link](https://anhir.grand-challenge.org/Data/). Please no
 
 ## Train your model
 The training of I2I model is the same as [KIN](https://github.com/Kaminyou/URUST). DN is a plugin for any I2I model with InstanceNorm layers.
+
+## Citation
+```
+@misc{ho2024pixelmomentsultrahighresolutionunpaired,
+      title={Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization}, 
+      author={Ming-Yang Ho and Che-Ming Wu and Min-Sheng Wu and Yufeng Jane Tseng},
+      year={2024},
+      eprint={2407.04245},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.04245}, 
+}
+```
