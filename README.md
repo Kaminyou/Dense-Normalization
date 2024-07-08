@@ -5,7 +5,7 @@
 # [ECCV 2024] Dense-Normalization
 Official implementation of **Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization**
 
-Paper link: [arXiv](https://arxiv.org/abs/2407.04245)
+Paper link: [arXiv](https://arxiv.org/abs/2407.04245)<br/>
 Authors: [Ming-Yang Ho](https://kaminyou.com/), [Che-Ming Wu](https://github.com/st9007a), [Min-Sheng Wu](https://github.com/Min-Sheng), and Yufeng Jane Tseng
 
 ![img](./images/teaser.jpg)
