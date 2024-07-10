@@ -2,15 +2,20 @@
 ![version](https://img.shields.io/badge/version-1.0.0-red)
 [![License: AGPL](https://img.shields.io/badge/License-AGPL-yellow.svg)](https://github.com/Kaminyou/Dense-Normalization/blob/main/LICENSE)
 ![linting workflow](https://github.com/Kaminyou/Dense-Normalization/actions/workflows/main.yml/badge.svg)
-# [ECCV 2024] Dense-Normalization
-Official implementation of **Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization**
+<div align="center">
 
-Paper link: [arXiv](https://arxiv.org/abs/2407.04245)<br/>
-Authors: [Ming-Yang Ho](https://kaminyou.com/), [Che-Ming Wu](https://github.com/st9007a), [Min-Sheng Wu](https://github.com/Min-Sheng), and Yufeng Jane Tseng
+<h1>ECCV 2024</h1>
+<h1>Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization</h1>
 
-![img](./images/teaser.jpg)
-![img](./images/framework.jpg)
+[Ming-Yang Ho](https://kaminyou.com/)<sup>1</sup>, &nbsp; [Che-Ming Wu](https://github.com/st9007a)<sup>2</sup>, &nbsp; [Min-Sheng Wu](https://github.com/Min-Sheng)<sup>3</sup>, &nbsp; [Yufeng Jane Tseng](https://www.csie.ntu.edu.tw/en/member/Faculty/Yufeng-Jane-Tseng-95281407)<sup>1</sup>
 
+<sup>1</sup>National Taiwan University, &nbsp; <sup>2</sup>Amazon Web Services, &nbsp; <sup>3</sup>aetherAI<br>
+
+[[`Paper`](https://arxiv.org/abs/2407.04245)]
+<br><br><image src="./images/teaser.jpg"/>
+<br><image src="./images/framework.jpg"/>
+
+</div>
 
 ## Get Started with an example
 We provide a simple example (one image from the Kyoto summer2autumn dataset) for you to translate an UHR image with our DN.
