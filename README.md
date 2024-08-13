@@ -4,7 +4,8 @@
 ![linting workflow](https://github.com/Kaminyou/Dense-Normalization/actions/workflows/main.yml/badge.svg)
 <div align="center">
 
-<h1>[ECCV 2024] Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization</h1>
+<h2>ECCV 2024</h2>
+<h1>Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization</h1>
 
 [Ming-Yang Ho](https://kaminyou.com/)<sup>1</sup>, &nbsp; [Che-Ming Wu](https://github.com/st9007a)<sup>2</sup>, &nbsp; [Min-Sheng Wu](https://github.com/Min-Sheng)<sup>3</sup>, &nbsp; [Yufeng Jane Tseng](https://www.csie.ntu.edu.tw/en/member/Faculty/Yufeng-Jane-Tseng-95281407)<sup>1</sup>
 
