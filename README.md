@@ -17,7 +17,7 @@
 
 </div>
 
-## Get Started with an example
+## Get started with an example
 We provide a simple example (one image from the Kyoto summer2autumn dataset) for you to translate an UHR image with our DN.
 
 ### Download example data
