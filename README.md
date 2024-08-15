@@ -11,7 +11,7 @@
 
 <sup>1</sup>National Taiwan University, &nbsp; <sup>2</sup>Amazon Web Services, &nbsp; <sup>3</sup>aetherAI<br>
 
-[[`Paper`](https://arxiv.org/abs/2407.04245)]
+[[`Paper`](https://arxiv.org/abs/2407.04245)] [[`Project Page`](https://kaminyou.com/Dense-Normalization/)]
 <br><br><image src="./images/teaser.jpg"/>
 <br><image src="./images/framework.jpg"/>
 
