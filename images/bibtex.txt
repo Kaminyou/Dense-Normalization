@@ -1,0 +1,9 @@
+@misc{ho2024pixelmomentsultrahighresolutionunpaired,
+      title={Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization}, 
+      author={Ming-Yang Ho and Che-Ming Wu and Min-Sheng Wu and Yufeng Jane Tseng},
+      year={2024},
+      eprint={2407.04245},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.04245}, 
+}

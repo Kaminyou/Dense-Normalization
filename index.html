@@ -11,10 +11,15 @@
 		width: 1100px;
 	}
 	
-	h1 {
+	/* h1 {
 		font-size:32px;
 		font-weight:300;
+	} */
+
+	h4 {
+		font-weight:300;
 	}
+
 	
 	.disclaimerbox {
 		background-color: #eee;		
@@ -119,7 +124,7 @@
 <html>
 <head>
 	<title>Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization</title>
-	<meta property="og:image" content="./images/teaser.jpg"/>
+	<meta property="og:image" content="./static/images/teaser.jpg"/>
 	<meta property="og:title" content="Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization." />
 	<meta property="og:description" content="The first successful study for the ultra-high-resolution unpaired image-to-image translation with constant space complexity." />
 
@@ -133,37 +138,43 @@
 
 		gtag('config', 'UA-75863369-6');
 	</script> -->
+    <link rel="stylesheet" href="./static/css/twentytwenty.css">
+    <script src="./static/js/jquery-3.2.1.min.js"></script>
+    <script src="./static/js/jquery.event.move.js"></script>
+    <script src="./static/js/jquery.twentytwenty.js"></script>
 </head>
 
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization</span>
+		<h2>ECCV 2024</h2>
+		<h1>Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization</h1>
 		<table align=center width=800px>
-			<table align=center width=800px>
+			<table align=center width=850px>
 				<tr>
 					<td align=center width=200px>
 						<center>
-							<span style="font-size:24px"><a href="https://kaminyou.com/">Ming-Yang Ho</a></span>
+							<span style="font-size:24px"><a href="https://kaminyou.com/">Ming-Yang Ho</a><sup>1</sup></span>
 						</center>
 					</td>
                     <td align=center width=200px>
 						<center>
-							<span style="font-size:24px"><a href="https://github.com/st9007a">Che-Ming Wu</a></span>
+							<span style="font-size:24px"><a href="https://github.com/st9007a">Che-Ming Wu</a><sup>2</sup></span>
 						</center>
 					</td>
 					<td align=center width=200px>
 						<center>
-							<span style="font-size:24px"><a href="https://github.com/Min-Sheng">Min-Sheng Wu</a></span>
+							<span style="font-size:24px"><a href="https://github.com/Min-Sheng">Min-Sheng Wu</a><sup>3</sup></span>
 						</center>
 					</td>
 					<td align=center width=200px>
 						<center>
-							<span style="font-size:24px"><a href="https://www.csie.ntu.edu.tw/zh_tw/member/Faculty/%E6%9B%BE%E5%AE%87%E9%B3%B3-YF-Tseng-95281407">Yufeng Jane Tseng</a></span>
+							<span style="font-size:24px"><a href="https://www.csie.ntu.edu.tw/zh_tw/member/Faculty/%E6%9B%BE%E5%AE%87%E9%B3%B3-YF-Tseng-95281407">Yufeng Jane Tseng</a><sup>1</sup></span>
 						</center>
 					</td>
 				</tr>
 			</table>
+			<h4 style="font-size:20px"><sup>1</sup>National Taiwan University <sup>2</sup>Amazon Web Services <sup>3</sup>aetherAI</h4>
 			<table align=center width=250px>
 				<tr>
 					<td align=center width=120px>
@@ -180,19 +191,20 @@
 			</table>
 		</table>
 	</center>
-
-	<center>
-		<table align=center width=850px>
-			<tr>
-				<td width=260px>
-					<center>
-						<img class="round" style="width:800px" src="./images/teaser.jpg"/>
-					</center>
-				</td>
-			</tr>
-		</table>
-	</center>
-
+	<hr>
+	<table align=center width=850px>
+		<center><h1>DEMO</h1></center>
+		<center>
+			<div class="twentytwenty-container">
+				<div class="cmpcontent">
+				<img src="./static/images/pair_03_0104_gt.jpg">
+				</div>
+				<div class="cmpcontent">
+				<img src="./static/images/pair_03_0104_dn.png">
+				</div>
+			</div>
+		</center>
+	</table>
 	<hr>
 
 	<table align=center width=850px>
@@ -202,6 +214,17 @@
 				Recent advancements in ultra-high-resolution unpaired image-to-image translation have aimed to mitigate the constraints imposed by limited GPU memory through patch-wise inference. Nonetheless, existing methods often compromise between the reduction of noticeable tiling artifacts and the preservation of color and hue contrast, attributed to the reliance on global image- or patch-level statistics in the instance normalization layers. In this study, we introduce a Dense Normalization (DN) layer designed to estimate pixel-level statistical moments. This approach effectively diminishes tiling artifacts while concurrently preserving local color and hue contrasts. To address the computational demands of pixel-level estimation, we further propose an efficient interpolation algorithm. Moreover, we invent a parallelism strategy that enables the DN layer to operate in a single pass. Through extensive experiments, we demonstrate that our method surpasses all existing approaches in performance. Notably, our DN layer is hyperparameter-free and can be seamlessly integrated into most unpaired image-to-image translation frameworks without necessitating retraining. Overall, our work paves the way for future exploration in handling images of arbitrary resolutions within the realm of unpaired image-to-image translation.
 			</td>
 		</tr>
+		<center>
+			<table align=center width=850px>
+				<tr>
+					<td width=260px>
+						<center>
+							<img class="round" style="width:800px" src="./static/images/teaser.jpg"/>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</center>
 	</table>
 	<br>
 
@@ -222,7 +245,7 @@
 	</table>
 	<hr> -->
 
-	<center><h1>Code</h1></center>
+	<center><h1>Dense Normalization Module</h1></center>
 
 	<table align=center width=420px>
 		<center>
@@ -237,33 +260,17 @@
 		<tr>
 			<td align=center width=800px>
 				<center>
-					<img class="round" style="width:800px" src="./images/framework.jpg"/>
+					<img class="round" style="width:800px" src="./static/images/framework.jpg"/>
 				</center>
 			</td>
 		</tr>
-	</table>
-	<table align=center width=850px>
-		<center>
-			<tr>
-				<td>
-					The implementation of DN is fully provided in our official GitHub repository. To reproduce the experiments, please follow the steps described in the README.md file.
-				</td>
-			</tr>
-		</center>
-	</table>
-	<table align=center width=800px>
-		<br>
-		<tr><center>
-			<span style="font-size:28px">&nbsp;<a href='https://github.com/Kaminyou/Dense-Normalization'>[GitHub]</a>
-			</center>
-		</span>
 	</table>
 	<br>
 	<hr>
 	<table align=center width=900px>
 		<center><h1>Paper and Supplementary Material</h1></center>
 		<tr>
-			<td><a href="https://arxiv.org/abs/2407.04245"><img class="layered-paper-big" style="height:175px" src="./images/paper.png"/></a></td>
+			<td><a href="https://arxiv.org/abs/2407.04245"><img class="layered-paper-big" style="height:175px" src="./static/images/paper.png"/></a></td>
 			<td><span style="font-size:14pt">Ming-Yang Ho, Che-Ming Wu, Min-Sheng Wu, and Yufeng Jane Tseng.<br>
 				<b>Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization.</b><br>
 				ECCV, 2024.<br>
@@ -279,7 +286,7 @@
 	<table align=center width=600px>
 		<tr>
 			<td><span style="font-size:14pt"><center>
-				<a href="./images/bibtex.txt">[Bibtex]</a>
+				<a href="./static/images/bibtex.txt">[Bibtex]</a>
 			</center></td>
 		</tr>
 	</table>
@@ -299,5 +306,12 @@
 	</table>
 
 <br>
+
+<script>
+	$(function(){
+		$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.3});
+	});
+</script>
+
 </body>
 </html>
