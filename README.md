@@ -11,7 +11,7 @@
 
 <sup>1</sup>National Taiwan University, &nbsp; <sup>2</sup>Amazon Web Services, &nbsp; <sup>3</sup>aetherAI<br>
 
-[[`Paper`](https://arxiv.org/abs/2407.04245)] [[`Project Page`](https://kaminyou.com/Dense-Normalization/)]
+[[`Paper (arxiv)`](https://arxiv.org/abs/2407.04245)] [[`Paper (official)`](https://link.springer.com/chapter/10.1007/978-3-031-72995-9_18)] [[`Project Page`](https://kaminyou.com/Dense-Normalization/)]
 <br><br><image src="./images/teaser.jpg"/>
 <br><image src="./images/framework.jpg"/>
 
@@ -67,13 +67,14 @@ The training of I2I model is the same as [KIN](https://github.com/Kaminyou/URUST
 
 ## Citation
 ```
-@misc{ho2024pixelmomentsultrahighresolutionunpaired,
-      title={Every Pixel Has its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization}, 
-      author={Ming-Yang Ho and Che-Ming Wu and Min-Sheng Wu and Yufeng Jane Tseng},
-      year={2024},
-      eprint={2407.04245},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.04245}, 
+@InProceedings{10.1007/978-3-031-72995-9_18,
+author="Ho, Ming-Yang and Wu, Che-Ming and Wu, Min-Sheng and Tseng, Yufeng Jane",
+title="Every Pixel Has Its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization",
+booktitle="Computer Vision -- ECCV 2024",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="312--328",
+isbn="978-3-031-72995-9"
 }
 ```
