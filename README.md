@@ -65,6 +65,9 @@ Please download it at [link](https://acrobat.grand-challenge.org/). Please note 
 ## Train your model
 The training of I2I model is the same as [KIN](https://github.com/Kaminyou/URUST). DN is a plugin for any I2I model with InstanceNorm layers.
 
+## Evaluation
+Please refer to the [KIN repo](https://github.com/Kaminyou/URUST). All the metrics used (except the downstream task) are provided there. For the downstream task, we will provide the script recently.
+
 ## Citation
 ```
 @InProceedings{10.1007/978-3-031-72995-9_18,
