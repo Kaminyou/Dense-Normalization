@@ -71,13 +71,13 @@ Please refer to the [KIN repo](https://github.com/Kaminyou/URUST). All the metri
 ## Citation
 ```
 @InProceedings{10.1007/978-3-031-72995-9_18,
-author="Ho, Ming-Yang and Wu, Che-Ming and Wu, Min-Sheng and Tseng, Yufeng Jane",
-title="Every Pixel Has Its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization",
-booktitle="Computer Vision -- ECCV 2024",
-year="2025",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="312--328",
-isbn="978-3-031-72995-9"
+    author="Ho, Ming-Yang and Wu, Che-Ming and Wu, Min-Sheng and Tseng, Yufeng Jane",
+    title="Every Pixel Has Its Moments: Ultra-High-Resolution Unpaired Image-to-Image Translation via Dense Normalization",
+    booktitle="Computer Vision -- ECCV 2024",
+    year="2025",
+    publisher="Springer Nature Switzerland",
+    address="Cham",
+    pages="312--328",
+    isbn="978-3-031-72995-9"
 }
 ```
